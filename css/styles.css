@@ -1446,6 +1446,7 @@ button {
     .hero__container {
         grid-template-columns: 1fr;
         gap: var(--space-12);
+        order: 1;
     }
 
     .hero__visual {
@@ -1454,6 +1455,14 @@ button {
 
     .hero__visual-frame {
         max-width: 400px;
+    }
+
+    .hero__stats-wrapper {
+        order: 3;
+    }
+
+    .hero__scroll {
+        order: 4;
     }
 
     .servicios__grid {
