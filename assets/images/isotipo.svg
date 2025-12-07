@@ -1,0 +1,15 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Isotipo solo: Paréntesis que forman una lente -->
+
+    <!-- Left bracket (código) -->
+    <path d="M8 8 L8 16 L4 20 L4 28 L8 32 L8 40" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right bracket (código) -->
+    <path d="M40 8 L40 16 L44 20 L44 28 L40 32 L40 40" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Lens circle - pixelated/segmented para representar lo binario -->
+    <circle cx="24" cy="24" r="10" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+
+    <!-- Pupil - el foco central, el dato -->
+    <circle cx="24" cy="24" r="4" fill="#00D64F"/>
+</svg>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Lente Binaria. Agenda una llamada gratuita de 30 minutos o envíanos un mensaje. Estamos en Sevilla pero trabajamos con toda España.">
+    <meta name="keywords" content="contacto, presupuesto, agencia digital, Sevilla, llamada gratuita">
+    <title>Contacto | Lente Binaria</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <div class="logo__icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo__svg">
+                        <path d="M8 8 L8 16 L4 20 L4 28 L8 32 L8 40" stroke="currentColor" stroke-width="2" fill="none" class="logo__bracket logo__bracket--left"/>
+                        <path d="M40 8 L40 16 L44 20 L44 28 L40 32 L40 40" stroke="currentColor" stroke-width="2" fill="none" class="logo__bracket logo__bracket--right"/>
+                        <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="4 2" class="logo__lens"/>
+                        <circle cx="24" cy="24" r="4" fill="currentColor" class="logo__pupil"/>
+                    </svg>
+                </div>
+                <div class="logo__text">
+                    <span class="logo__lente">LENTE</span>
+                    <span class="logo__binaria">BINARIA</span>
+                </div>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="servicios.html" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="proceso.html" class="nav__link">Proceso</a></li>
+                    <li class="nav__item"><a href="casos.html" class="nav__link">Casos</a></li>
+                    <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--cta nav__link--active">Reservar</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero page-hero--short">
+        <div class="page-hero__grid"></div>
+        <div class="container">
+            <span class="page-hero__tag">// contacto</span>
+            <h1 class="page-hero__title">Hablemos de <span class="text-accent">tu proyecto</span></h1>
+            <p class="page-hero__subtitle">
+                El primer paso es conocernos. Cuéntanos sobre tu negocio y tus objetivos,
+                y te responderemos en menos de 24 horas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contacto Principal -->
+    <section class="contacto-page">
+        <div class="container">
+            <div class="contacto-page__grid">
+                <!-- Información de contacto -->
+                <div class="contacto-page__info">
+                    <div class="contacto-page__block">
+                        <h2 class="contacto-page__block-title">Dos formas de empezar</h2>
+                        <p class="contacto-page__block-text">
+                            Puedes enviarnos un mensaje con el formulario o reservar directamente
+                            una llamada de 30 minutos sin compromiso.
+                        </p>
+                    </div>
+
+                    <div class="contacto-page__option">
+                        <div class="contacto-page__option-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contacto-page__option-content">
+                            <h3>Llamada de descubrimiento</h3>
+                            <p>30 minutos para conocer tu negocio y ver si encajamos. Sin compromiso, sin presión de venta.</p>
+                            <a href="#contactForm" class="btn btn--primary contacto-page__option-cta" id="btnReservarLlamada">Reservar llamada</a>
+                        </div>
+                    </div>
+
+                    <div class="contacto-page__details">
+                        <h3 class="contacto-page__details-title">También puedes escribirnos</h3>
+
+                        <div class="contacto-page__detail">
+                            <span class="contacto-page__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="contacto-page__detail-label">Email</span>
+                                <a href="mailto:info.lentebinaria@gmail.com" class="contacto-page__detail-value text-mono">info.lentebinaria@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contacto-page__detail">
+                            <span class="contacto-page__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="contacto-page__detail-label">Ubicación</span>
+                                <span class="contacto-page__detail-value text-mono">Sevilla, España</span>
+                            </div>
+                        </div>
+
+                        <div class="contacto-page__detail">
+                            <span class="contacto-page__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="contacto-page__detail-label">Horario</span>
+                                <span class="contacto-page__detail-value text-mono">L-V: 9:00 - 18:00</span>
+                            </div>
+                        </div>
+
+                        <div class="contacto-page__detail">
+                            <span class="contacto-page__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <span class="contacto-page__detail-label">Respuesta</span>
+                                <span class="contacto-page__detail-value text-mono">&lt; 24 horas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-page__social">
+                        <h3 class="contacto-page__social-title">Síguenos</h3>
+                        <div class="contacto-page__social-links">
+                            <a href="#" class="contacto-page__social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                    <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                                </svg>
+                                <span>@lentebinaria</span>
+                            </a>
+                            <a href="#" class="contacto-page__social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                                <span>Lente Binaria</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="contacto-page__form-wrapper">
+                    <form class="contacto-page__form" id="contactForm" action="https://formspree.io/f/mpwvlvdv" method="POST">
+                        <!-- Hidden field to track if it's a call booking -->
+                        <input type="hidden" id="tipoContacto" name="tipo_contacto" value="mensaje">
+
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Tu nombre completo">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+34 600 000 000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="negocio" class="form-label">Tipo de negocio *</label>
+                            <select id="negocio" name="negocio" class="form-input form-select" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="clinica-dental">Clínica dental</option>
+                                <option value="clinica-salud">Clínica / Centro de salud</option>
+                                <option value="estetica">Centro de estética</option>
+                                <option value="fisioterapia">Fisioterapia</option>
+                                <option value="psicologia">Psicología / Coaching</option>
+                                <option value="artesano">Artesano / Creativo</option>
+                                <option value="hosteleria">Hostelería / Restauración</option>
+                                <option value="comercio">Comercio / Tienda</option>
+                                <option value="servicios">Servicios profesionales</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pack" class="form-label">¿Qué pack te interesa?</label>
+                            <select id="pack" name="pack" class="form-input form-select">
+                                <option value="">No estoy seguro/a</option>
+                                <option value="presencia">Pack Presencia (desde 1.800€)</option>
+                                <option value="crecimiento">Pack Crecimiento (desde 5.000€)</option>
+                                <option value="transformacion">Pack Transformación (desde 12.000€)</option>
+                                <option value="carta">Servicio a la carta</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="web-actual" class="form-label">¿Tienes web actualmente?</label>
+                            <select id="web-actual" name="web-actual" class="form-input form-select">
+                                <option value="">Selecciona una opción</option>
+                                <option value="no">No tengo web</option>
+                                <option value="basica">Sí, pero es muy básica</option>
+                                <option value="antigua">Sí, pero está anticuada</option>
+                                <option value="ok">Sí, pero quiero mejorarla</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Cuéntanos sobre tu proyecto *</label>
+                            <textarea id="mensaje" name="mensaje" class="form-input form-textarea" rows="5" required placeholder="¿Qué necesitas? ¿Cuáles son tus principales retos? ¿Qué te gustaría conseguir?"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hora-llamada" class="form-label">¿A qué hora prefieres que te llamemos?</label>
+                            <select id="hora-llamada" name="hora_llamada" class="form-input form-select">
+                                <option value="">Selecciona una franja horaria</option>
+                                <option value="9-11">Mañana temprano (9:00 - 11:00)</option>
+                                <option value="11-13">Media mañana (11:00 - 13:00)</option>
+                                <option value="13-15">Mediodía (13:00 - 15:00)</option>
+                                <option value="15-17">Tarde temprano (15:00 - 17:00)</option>
+                                <option value="17-18">Tarde (17:00 - 18:00)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="como-conociste" class="form-label">¿Cómo nos conociste?</label>
+                            <select id="como-conociste" name="como-conociste" class="form-input form-select">
+                                <option value="">Selecciona una opción</option>
+                                <option value="google">Búsqueda en Google</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="recomendacion">Recomendación</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-group--checkbox">
+                            <input type="checkbox" id="privacidad" name="privacidad" class="form-checkbox" required>
+                            <label for="privacidad" class="form-label form-label--checkbox">
+                                He leído y acepto la <a href="privacidad.html" class="form-link">política de privacidad</a> *
+                            </label>
+                        </div>
+
+                        <div class="form-group form-group--checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                            <label for="newsletter" class="form-label form-label--checkbox">
+                                Quiero recibir consejos y novedades por email (nada de spam, prometido)
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full btn--large">
+                            Enviar mensaje
+                            <span class="btn__arrow">→</span>
+                        </button>
+
+                        <p class="form-note text-mono">
+                            * Campos obligatorios. Respondemos en menos de 24 horas laborables.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Rápido -->
+    <section class="contacto-faq">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-header__tag">// dudas frecuentes</span>
+                <h2 class="section-header__title">Antes de <span class="text-accent">contactar</span></h2>
+            </header>
+
+            <div class="faq__grid faq__grid--compact">
+                <div class="faq__item">
+                    <h3 class="faq__question">¿La llamada inicial es gratuita?</h3>
+                    <p class="faq__answer">Sí, la llamada de descubrimiento de 30 minutos es totalmente gratuita y sin compromiso. Es para conocernos y ver si encajamos.</p>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__question">¿Cuánto tardáis en responder?</h3>
+                    <p class="faq__answer">Respondemos todos los mensajes en menos de 24 horas laborables. Si es urgente, llámanos directamente.</p>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__question">¿Trabajáis fuera de Sevilla?</h3>
+                    <p class="faq__answer">Sí, trabajamos con clientes de toda España. Las sesiones de foto/vídeo requieren desplazamiento (incluido sin coste adicional en Andalucía).</p>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__question">¿Necesito tener claro lo que quiero?</h3>
+                    <p class="faq__answer">No, para eso está la llamada inicial. Te ayudamos a definir qué necesitas y cuál es la mejor opción para tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="logo logo--footer">
+                        <div class="logo__icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo__svg">
+                                <path d="M8 8 L8 16 L4 20 L4 28 L8 32 L8 40" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M40 8 L40 16 L44 20 L44 28 L40 32 L40 40" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+                                <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__lente">LENTE</span>
+                            <span class="logo__binaria">BINARIA</span>
+                        </div>
+                    </a>
+                    <p class="footer__tagline">
+                        Desarrollo web, producción audiovisual y automatizaciones para negocios que quieren crecer.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Servicios</h4>
+                        <ul class="footer__list">
+                            <li><a href="servicios.html" class="footer__link">Pack Presencia</a></li>
+                            <li><a href="servicios.html" class="footer__link">Pack Crecimiento</a></li>
+                            <li><a href="servicios.html" class="footer__link">Pack Transformación</a></li>
+                            <li><a href="servicios.html" class="footer__link">Servicios a la carta</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Empresa</h4>
+                        <ul class="footer__list">
+                            <li><a href="nosotros.html" class="footer__link">Sobre nosotros</a></li>
+                            <li><a href="proceso.html" class="footer__link">Cómo trabajamos</a></li>
+                            <li><a href="casos.html" class="footer__link">Casos de éxito</a></li>
+                            <li><a href="contacto.html" class="footer__link">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Legal</h4>
+                        <ul class="footer__list">
+                            <li><a href="aviso-legal.html" class="footer__link">Aviso legal</a></li>
+                            <li><a href="privacidad.html" class="footer__link">Política de privacidad</a></li>
+                            <li><a href="cookies.html" class="footer__link">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright text-mono">
+                    © 2024 Lente Binaria. Todos los derechos reservados.
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

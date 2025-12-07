@@ -1,0 +1,25 @@
+<svg viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Isotipo -->
+    <g class="isotipo">
+        <!-- Left bracket -->
+        <path d="M8 8 L8 16 L4 20 L4 28 L8 32 L8 40" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Right bracket -->
+        <path d="M40 8 L40 16 L44 20 L44 28 L40 32 L40 40" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- Lens circle (segmented) -->
+        <circle cx="24" cy="24" r="10" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+
+        <!-- Pupil -->
+        <circle cx="24" cy="24" r="4" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Logotipo Text -->
+    <g class="logotipo">
+        <!-- LENTE - Manrope Bold style -->
+        <text x="60" y="23" font-family="Manrope, sans-serif" font-weight="700" font-size="18" letter-spacing="0.1em" fill="#FFFFFF">LENTE</text>
+
+        <!-- BINARIA - JetBrains Mono Light style -->
+        <text x="60" y="38" font-family="JetBrains Mono, monospace" font-weight="300" font-size="12" letter-spacing="0.15em" fill="#A3A3A3">BINARIA</text>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="48" height="48" rx="8" fill="#0A0A0A"/>
+
+    <!-- Left bracket -->
+    <path d="M12 10 L12 16 L8 20 L8 28 L12 32 L12 38" stroke="#00D64F" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Right bracket -->
+    <path d="M36 10 L36 16 L40 20 L40 28 L36 32 L36 38" stroke="#00D64F" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Lens circle (segmented/pixelated) -->
+    <circle cx="24" cy="24" r="8" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+
+    <!-- Pupil -->
+    <circle cx="24" cy="24" r="3" fill="#00D64F"/>
+</svg>
