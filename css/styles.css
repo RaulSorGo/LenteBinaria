@@ -495,7 +495,7 @@ button {
     border-bottom: 1px solid var(--color-gray-800);
     padding: var(--space-8) 0;
     margin-bottom: var(--space-8);
-    z-index: 10;
+    z-index: 100;
 }
 
 .hero__stats {
@@ -1456,12 +1456,6 @@ button {
         max-width: 400px;
     }
 
-    /* Ajustar estadísticas cuando están dentro de servicios en móvil */
-    .servicios .hero__stats-wrapper {
-        margin-top: var(--space-8);
-        margin-bottom: var(--space-12);
-    }
-
     .servicios__grid {
         grid-template-columns: 1fr;
         gap: var(--space-8);
@@ -1499,6 +1493,13 @@ button {
 
     .footer__links {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Hide stats on small devices */
+@media (max-width: 800px) {
+    .hero__stats-wrapper {
+        display: none;
     }
 }
 
