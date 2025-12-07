@@ -1446,7 +1446,6 @@ button {
     .hero__container {
         grid-template-columns: 1fr;
         gap: var(--space-12);
-        order: -2;
     }
 
     .hero__visual {
@@ -1457,12 +1456,10 @@ button {
         max-width: 400px;
     }
 
-    .hero__scroll {
-        order: -1;
-    }
-
-    .hero__stats-wrapper {
-        order: 0;
+    /* Ajustar estadísticas cuando están dentro de servicios en móvil */
+    .servicios .hero__stats-wrapper {
+        margin-top: var(--space-8);
+        margin-bottom: var(--space-12);
     }
 
     .servicios__grid {

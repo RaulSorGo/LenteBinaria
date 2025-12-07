@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFormValidation();
     initScrollAnimations();
     initCallBooking();
+    initMobileStatsPosition();
 });
 
 /* ==========================================================================
@@ -423,6 +424,49 @@ function initCallBooking() {
             }
         }
     }
+}
+
+/* ==========================================================================
+   Mobile Stats Position
+   ========================================================================== */
+function initMobileStatsPosition() {
+    const statsWrapper = document.querySelector('.hero__stats-wrapper');
+    const serviciosSection = document.querySelector('.servicios');
+    const sectionHeader = serviciosSection?.querySelector('.section-header');
+
+    if (!statsWrapper || !serviciosSection || !sectionHeader) return;
+
+    let statsOriginalParent = statsWrapper.parentElement;
+    let statsNextSibling = statsWrapper.nextElementSibling;
+    let isMoved = false;
+
+    const moveStats = () => {
+        const isMobile = window.innerWidth <= 1024;
+
+        if (isMobile && !isMoved) {
+            // Mover estadísticas después del section-header
+            sectionHeader.insertAdjacentElement('afterend', statsWrapper);
+            isMoved = true;
+        } else if (!isMobile && isMoved) {
+            // Restaurar estadísticas a su posición original
+            if (statsNextSibling) {
+                statsOriginalParent.insertBefore(statsWrapper, statsNextSibling);
+            } else {
+                statsOriginalParent.appendChild(statsWrapper);
+            }
+            isMoved = false;
+        }
+    };
+
+    // Ejecutar al cargar
+    moveStats();
+
+    // Ejecutar al redimensionar
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(moveStats, 150);
+    });
 }
 
 /* ==========================================================================
