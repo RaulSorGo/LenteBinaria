@@ -1457,12 +1457,12 @@ button {
         max-width: 400px;
     }
 
-    .hero__stats-wrapper {
-        order: 3;
+    .hero__scroll {
+        order: 2;
     }
 
-    .hero__scroll {
-        order: 4;
+    .hero__stats-wrapper {
+        order: 3;
     }
 
     .servicios__grid {
